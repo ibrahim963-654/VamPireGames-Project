@@ -5,7 +5,11 @@ form?.addEventListener("submit", function (e) {
     let value = input?.value;
     if (value && value.trim() !== "") {
         window.localStorage.setItem("name", value);
-        window.location.assign("index.html");
+        if (document.referrer) {
+    window.history.back();
+} else {
+    window.location.href = "index.html";
+}
     }
 });
 export {};
