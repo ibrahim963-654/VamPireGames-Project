@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "rootDir": "./src",       // بيقول للمترجم: ملفات التي إس جوه src
+    "outDir": "./dist",       // بيقول للمترجم: ارمي الجافا سكريبت جوه dist
+    "strict": true,
+    "esModuleInterop": true
+  }
+}
